@@ -1,0 +1,373 @@
+/* Normalize */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Estilos generales */
+#index,
+#escuela,
+#eventos,
+#nosotros,
+#contacto {
+    background-color: #151515;
+}
+
+
+h1 {
+    font-size: 3.5rem;
+    font-family: 'Archivo Black', sans-serif;
+    color: #85FFBD;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Archivo Black', sans-serif;
+
+    color: #85FFBD;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-family: 'Archivo Black', sans-serif;
+
+    color: #85FFBD;
+}
+
+p {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1rem;
+    color: #85FFBD;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 479px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+ul li {
+    list-style-type: none;
+}
+
+header {
+    grid-area: nav;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 71%);
+    z-index: 1;
+}
+
+.logo {
+    height: 83px;
+    width: 83px;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1rem;
+}
+
+nav ul .nav-link {
+    padding: 25px;
+    color: #85FFBD;
+}
+
+nav ul .nav-link:hover {
+    background-color: #85FFBD;
+    color: #000;
+}
+
+/* Index */
+
+#index .fondo {
+    background-image: url(../imagenes/main-index.jpg);
+    background-size: cover;
+    position: relative;
+    background-position: 40% top;
+}
+
+#index .main__h1 {
+    color: white;
+    -webkit-Text-stroke: 2px #000;
+}
+
+#index .main__h1-span {
+    color: #D0414A;
+    font-weight: 700;
+}
+
+#index .main__btn {
+    font-size: 2rem;
+    border-radius: 25px;
+    background-color: #D0414A;
+    color: white;
+    font-weight: 100;
+    font-family: 'Questrial', sans-serif;
+    border: none;
+}
+
+@media (max-width: 479px) {
+    #index .main__btn {
+        font-size: 1.5rem;
+    }
+}
+
+#index .contenedor__texto{
+    animation: aparicion-texto 1.5s both;
+}
+
+@keyframes aparicion-texto {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+/* Nosotros */
+
+#nosotros h1 {
+    width: fit-content;
+    margin: auto;
+    padding: 50px;
+}
+
+#nosotros .main__contenedorImagen {
+    display: inline-block;
+}
+
+#nosotros .main__contenedorImagen img {
+    width: 50vw;
+    vertical-align: top;
+}
+
+#nosotros .main__contenedorTexto {
+    display: inline-block;
+    width: 48vw;
+    vertical-align: top;
+    height: 100%;
+    padding: 20px;
+    text-align: justify;
+}
+
+#nosotros .main__contenedorTexto h2 {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* Escuela */
+#escuela {
+    display: grid;
+    grid-template:
+        "nav       nav        nav    " 82px
+        ".         contenido  .      " auto
+        "galeria   galeria    galeria" auto
+        "footer    footer     footer " auto /
+        0.1fr 1fr 0.1fr;
+    align-content: space-between;
+}
+
+.contenido {
+    grid-area: contenido;
+}
+
+#escuela h1,
+#escuela h2 {
+    width: fit-content;
+    margin: auto;
+    padding: 50px;
+}
+
+#escuela .section__clases {
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    background-color: #3D3D3E;
+    border-radius: 4px;
+}
+
+
+
+#escuela .section__clasesImg {
+    width: 50%;
+    border-radius: 4px;
+}
+
+#escuela .section__clasesImg img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#escuela .section__clasesTexto {
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    text-align: justify;
+}
+
+#escuela .section__galeria {
+    grid-area: galeria;
+}
+
+@media (max-width: 991px) {
+
+    /* tuve que usar !important porque me lo pisaba el estilo anterior y no se porque */
+    .section__clases-grupales {
+        flex-direction: column !important;
+    }
+
+    .section__clases-individuales {
+        flex-direction: column-reverse !important;
+    }
+
+    .section__clasesImg,
+    .section__clasesTexto {
+        width: 100% !important;
+    }
+}
+
+.galeria__contenedorImagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+
+.galeria__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #03afff;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.galeria__item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+@media (min-width: 600px) {
+    .ancha {
+        grid-column: span 2;
+    }
+
+    .alta {
+        grid-row: span 2;
+    }
+}
+
+/* Eventos */
+#eventos h1 {
+    width: fit-content;
+    margin: auto;
+    padding: 50px;
+}
+
+#eventos .eventos__texto h2 {
+    width: fit-content;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+#eventos .eventos__texto h3 {
+    display: inline;
+    padding: 0 12%;
+    margin-bottom: 10px;
+}
+
+#eventos article {
+    border: 3px solid black;
+    margin: 5px 0;
+}
+
+#eventos .eventos__imagen {
+    display: inline-block;
+}
+
+#eventos .eventos__imagen img {
+    width: 50vw;
+    height: 100vh;
+    vertical-align: top;
+}
+
+#eventos .eventos__texto {
+    display: inline-block;
+    width: 48vw;
+    vertical-align: top;
+    padding: 20px;
+    text-align: justify;
+}
+
+/* Contacto */
+
+#contacto {
+    background-image: url(../imagenes/galeria-15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondo__formulario {
+    background-color: rgba(39, 42, 52, 85%);
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+    grid-area: footer;
+    background-color: #151515;
+}
+
+.footer__redes button {
+    border-radius: 50%;
+    background-color: #85FFBD;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+}
+
+.footer__redes button:hover {
+    transform: scale(1.04);
+    background-color: #3D3D3E;
+    color: #85FFBD;
+}
