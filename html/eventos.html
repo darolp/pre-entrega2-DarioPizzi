@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,19 +13,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <!-- BOOSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- hoja de estilos -->
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../sass/main.css">
 </head>
+
 <body id="eventos">
     <!-- barra navegacion -->
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logo" src="../imagenes/logoPatinUrbano.png" alt="logoPatinUrbano"></a>
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../imagenes/logoPatinUrbano.png"
+                        alt="logoPatinUrbano"></a>
                 <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation"> 
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse  navbar-collapse" id="navbarTogglerDemo02">
@@ -43,41 +47,55 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>                            
-                    </ul>                        
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
 
     <!-- eventos -->
-    <h1>Proximos Eventos!</h1>
-    <article>
-        <div class="eventos__imagen">
-            <img src="../imagenes/eventos-1.jpg" alt="foto evento aniversario patin urbano">
-        </div>
-        <div class="eventos__texto">
-            <h2>Salida por los 11 años de Patin Urbano Campana</h2>
-            <h3>Fecha: 03/09/22</h3>
-            <h3>Ubicacion: <a href="">click aqui</a> </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minima sit culpa ut, enim temporibus dolore? Illum necessitatibus dolorum, cumque minus harum doloremque quas numquam ab voluptatibus, maiores distinctio rem.</p>
-        </div>
-    </article>
-    
-    <article>
-        <div class="eventos__imagen">
-            <img src="../imagenes/eventos-2.jpg" alt="foto evento Halloween">
-        </div>
-        <div class="eventos__texto">
-            <h2>Rolleada Halloween</h2>
-            <h3>Fecha: 03/11/22</h3>
-            <h3>Ubicacion: <a href="">click aqui</a> </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minima sit culpa ut, enim temporibus dolore? Illum necessitatibus dolorum, cumque minus harum doloremque quas numquam ab voluptatibus, maiores distinctio rem.</p>
-        </div>
-    </article>
+    <main>
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center py-5">Proximos Eventos!</h1>
+            </div>
+            <article class="row my-5">
+                <div class="col-lg-6 col-12 my-3">
+                    <img class="col-12" src="../imagenes/eventos-1.jpg"
+                        alt="foto evento aniversario patin urbano">
+                </div>
+                <div class="col-lg-6 col-12 ">
+                    <h2 class="text-center my-3">Salida por los 11 años de Patin Urbano Campana</h2>
+                    <div class="d-flex flex-wrap  my-4">
+                        <h3 class="col-lg-6 text-center col-12">Fecha: 03/09/22</h3>
+                        <h3 class="col-lg-6 text-center col-12">Ubicacion: <a href="">click aqui</a> </h3>
+                    </div>
+                    <p class="px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit animi porro sapiente? Vero
+                        nisi error ducimus accusamus explicabo dolorem ut, ipsa reprehenderit quibusdam? Neque,
+                        culpa dignissimos? Temporibus id dolor dignissimos!</p>
+                </div>
+            </article>
+            <article class="row my-5">
+                <div class="col-lg-6 col-12 my-3">
+                    <img class="col-12" src="../imagenes/eventos-1.jpg"
+                        alt="foto evento aniversario patin urbano">
+                </div>
+                <div class="col-lg-6 col-12 ">
+                    <h2 class="text-center my-3">Salida por los 11 años de Patin Urbano Campana</h2>
+                    <div class="d-flex flex-wrap  my-4">
+                        <h3 class="col-lg-6 text-center col-12">Fecha: 03/09/22</h3>
+                        <h3 class="col-lg-6 text-center col-12">Ubicacion: <a href="">click aqui</a> </h3>
+                    </div>
+                    <p class="px-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit animi porro sapiente? Vero
+                        nisi error ducimus accusamus explicabo dolorem ut, ipsa reprehenderit quibusdam? Neque,
+                        culpa dignissimos? Temporibus id dolor dignissimos!</p>
+                </div>
+            </article>
+    </main>
 
     <!-- footer -->
-    <footer>
+    <footer class="footer">
         <div class="container-fluid text-center pt-3">
             <div class="row">
                 <div class="col-md-3 col-12 d-flex justify-content-center align-items-center">
@@ -115,7 +133,10 @@
     </footer>
 
     <!-- BOOSTRAP JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>

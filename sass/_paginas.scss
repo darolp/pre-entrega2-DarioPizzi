@@ -1,0 +1,213 @@
+/* Index */
+
+#index {
+    background-color: $colorFondo;
+
+    & .fondo {
+        background-image: url(../imagenes/main-index.jpg);
+        background-size: cover;
+        position: relative;
+        background-position: 40% top;
+    }
+
+    & .main {
+
+        &__h1 {
+            color: $colorTituloPrincipal;
+            -webkit-text-stroke: 2px #000;
+
+            &-span {
+                color: $colorSpan;
+                font-weight: 700;
+            }
+        }
+
+        &__btn {
+            @include fuente-titulares(2rem);
+            border-radius: 25px;
+            background-color: $colorSpan;
+            color: white;
+            font-weight: 100;
+            border: none;
+
+            @media(max-width: 479px) {
+                & {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        & .contenedor__texto {
+            animation: aparicion-texto 1.5 both;
+
+            
+        }
+        
+        @keyframes aparicion-texto {
+            0% {
+                filter: blur(12px);
+                opacity: 0;
+            }
+
+            100% {
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+    }
+
+    & .carousel {
+        &-item {
+            height: 100vh;
+
+            & h5,
+            p {
+                width: fit-content;
+                background-color: rgba(0, 0, 0, 80%);
+                color: $colorPrincipal;
+            }
+
+            & img {
+                height: 100%;
+                width: auto;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/*Nosotros*/
+#nosotros{
+    background-color: $colorFondo;
+}
+
+/*Escuela*/
+#escuela {
+    background-color: $colorFondo;
+    display: grid;
+    grid-template:
+        "nav       nav        nav    " 82px
+        ".         contenido  .      " auto
+        "galeria   galeria    galeria" auto
+        "footer    footer     footer " auto /
+        0.1fr       1fr        0.1fr;
+    align-content: space-between;
+
+    & .contenido {
+        grid-area: contenido;
+    }
+
+    & h1,
+    h2 {
+        width: fit-content;
+        margin: auto;
+        padding: 50px;
+    }
+
+    & .section__clases {
+        border: 3px solid black;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 25px;
+        background-color: $colorFondoSecundario;
+        border-radius: 4px;
+
+        &Img {
+            width: 50%;
+            border-radius: 4px;
+
+            & img {
+                width: 100%;
+                object-fit: cover;
+                border-radius: 4px;
+            }
+        }
+
+        &Texto {
+            height: 100%;
+            width: 50%;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        @media (max-width: 991px) {
+
+            /* tuve que usar !important porque me lo pisaba el estilo anterior y no se porque */
+            &-grupales {
+                flex-direction: column !important;
+            }
+        
+            &-individuales {
+                flex-direction: column-reverse !important;
+            }
+        
+            &Img,
+            &Texto {
+                width: 100% !important;
+            }
+        }
+    }
+
+    & .galeria{
+        grid-area: galeria;
+
+        &__contenedor{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-auto-rows: minmax(200px, auto);
+            gap: 20px;
+            padding: 20px;
+            grid-auto-flow: dense;
+
+            & .galeria__item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            
+                background-color: $colorFondoGaleria;
+                border-radius: 4px;
+                transition: transform 0.3s ease-in-out;
+            
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                &:hover{
+                    filter: opacity(0.9);
+                    transform: scale(1.04);
+                }
+
+                
+            }
+            @media (min-width: 600px) {
+                .ancha {
+                    grid-column: span 2;
+                }
+            
+                .alta {
+                    grid-row: span 2;
+                }
+            }
+        }
+    }
+}
+
+/*Eventos*/
+#eventos{
+    background-color: $colorFondo;
+}
+
+/*Contacto*/
+
+#contacto{
+    background-color: $colorFondo;
+    background-image: url(../imagenes/galeria-15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & .fondo__formulario{
+        background-color: rgba(39, 42, 52, 85%);
+        border-radius: 10px;
+    }
+}
+

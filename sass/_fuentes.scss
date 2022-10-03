@@ -1,0 +1,34 @@
+/*fuentes*/
+h1 {
+    @include fuente-titulares(3.5rem);
+}
+
+h2 {
+    @include fuente-titulares(2rem);
+}
+
+h3 {
+    @include fuente-titulares(1.25rem)
+}
+
+p {
+    @include funte-parrafos(1rem)
+}
+
+@media (max-width: 479px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

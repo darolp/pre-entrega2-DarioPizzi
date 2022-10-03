@@ -13,9 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <!-- BOOSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- hoja de estilos -->
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="../sass/main.css">
 </head>
 
 <body id="nosotros">
@@ -23,10 +24,11 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="logo" src="../imagenes/logoPatinUrbano.png" alt="logoPatinUrbano"></a>
+                <a class="navbar-brand" href="../index.html"><img class="logo" src="../imagenes/logoPatinUrbano.png"
+                        alt="logoPatinUrbano"></a>
                 <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation"> 
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <div class="collapse  navbar-collapse" id="navbarTogglerDemo02">
@@ -45,8 +47,8 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>                            
-                    </ul>                        
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -54,18 +56,33 @@
 
     <!-- descripcion empresa -->
     <main>
-        <h1>Sobre nosotros!</h1>
-        <div class="main__contenedorImagen">
-            <img src="../imagenes/nosotros.jpeg" alt="bandera patin urbano">
-        </div>
-        <div class="main__contenedorTexto">
-            <h2>11 años de Patin Urbano Campana</h2>
-            <p>Patin Urbano Campana arranco como un grupo de patinadores de campana y al rededores que se reunian para compartir experiencias y buenos momentos. Ya pasaron 11 años de su fundación y el espiritu de juntarse y compartir sigue intacto.Recientemente se formo la Escuela de patin urbano con el objetivo de difundir este hermoso deporte. En la escuela buscamos que se desarrolle un espacio de aprendizaje cuidado donde se evitan lo maximo posible las caidas y las lesiones para que el alumno adquiera las habilidades y destrezas poco a poco de manera progresiva.<p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center my-4">
+                    <h1>Sobre nosotros!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 my-3">
+                    <img src="../imagenes/nosotros.jpeg" alt="bandera patin urbano" class="col-12">
+                </div>
+                <div class="col-lg-6 my-3">
+                    <h2 class="text-center">11 años de Patin Urbano Campana</h2>
+                    <p>Patin Urbano Campana arranco como un grupo de patinadores de campana y al rededores que se
+                        reunian para compartir experiencias y buenos momentos. Ya pasaron 11 años de su fundación y el
+                        espiritu de juntarse y compartir sigue intacto.Recientemente se formo la Escuela de patin urbano
+                        con el objetivo de difundir este hermoso deporte. En la escuela buscamos que se desarrolle un
+                        espacio de aprendizaje cuidado donde se evitan lo maximo posible las caidas y las lesiones para
+                        que el alumno adquiera las habilidades y destrezas poco a poco de manera progresiva.
+                    <p>
+                </div>
+            </div>
+
         </div>
     </main>
 
     <!-- footer -->
-    <footer>
+    <footer class="footer">
         <div class="container-fluid text-center pt-3">
             <div class="row">
                 <div class="col-md-3 col-12 d-flex justify-content-center align-items-center">
@@ -103,7 +120,9 @@
     </footer>
 
     <!-- BOOSTRAP JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 
 </body>
 

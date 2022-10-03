@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'mixins';
+/*normalize*/
+*{
+    @include normalize;
+}
+@import 'fuentes';
+@import 'header';
+@import 'paginas';
+@import 'footer';

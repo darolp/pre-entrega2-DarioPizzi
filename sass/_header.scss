@@ -1,0 +1,33 @@
+
+/*Header*/
+header {
+    grid-area: nav;
+    
+    & nav {
+        background-color: $colorNav;
+        z-index: 1;
+
+        & .logo {
+            @include logo;
+        }
+
+        & ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            font-size: 1rem;
+
+            & .nav-link {
+                padding: 25px;
+                color: $colorPrincipal;
+
+                &:hover {
+                    background-color: $colorPrincipal;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

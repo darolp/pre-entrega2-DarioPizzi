@@ -15,7 +15,7 @@
     background-color: #151515;
 }
 
-
+/* 
 h1 {
     font-size: 3.5rem;
     font-family: 'Archivo Black', sans-serif;
@@ -59,9 +59,9 @@ p {
     p {
         font-size: 1rem;
     }
-}
+} */
 
-ul li {
+/* ul li {
     list-style-type: none;
 }
 
@@ -97,11 +97,11 @@ nav ul .nav-link {
 nav ul .nav-link:hover {
     background-color: #85FFBD;
     color: #000;
-}
+} */
 
 /* Index */
 
-#index .fondo {
+/* #index .fondo {
     background-image: url(../imagenes/main-index.jpg);
     background-size: cover;
     position: relative;
@@ -128,11 +128,25 @@ nav ul .nav-link:hover {
     border: none;
 }
 
-@media (max-width: 479px) {
+.carousel-item{
+    height: 100vh;
+}
+.carousel-item h5 , .carousel-item p {
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 80%);
+    color: #85FFBD;
+}
+.carousel-item img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+} */
+
+/* @media (max-width: 479px) {
     #index .main__btn {
         font-size: 1.5rem;
     }
-}
+} */
 
 #index .contenedor__texto{
     animation: aparicion-texto 1.5s both;
@@ -153,36 +167,7 @@ nav ul .nav-link:hover {
 
 /* Nosotros */
 
-#nosotros h1 {
-    width: fit-content;
-    margin: auto;
-    padding: 50px;
-}
 
-#nosotros .main__contenedorImagen {
-    display: inline-block;
-}
-
-#nosotros .main__contenedorImagen img {
-    width: 50vw;
-    vertical-align: top;
-}
-
-#nosotros .main__contenedorTexto {
-    display: inline-block;
-    width: 48vw;
-    vertical-align: top;
-    height: 100%;
-    padding: 20px;
-    text-align: justify;
-}
-
-#nosotros .main__contenedorTexto h2 {
-    text-align: center;
-    width: fit-content;
-    margin: auto;
-    margin-bottom: 50px;
-}
 
 /* Escuela */
 #escuela {
@@ -217,7 +202,7 @@ nav ul .nav-link:hover {
 }
 
 
-
+/* 
 #escuela .section__clasesImg {
     width: 50%;
     border-radius: 4px;
@@ -234,12 +219,7 @@ nav ul .nav-link:hover {
     width: 50%;
     padding: 20px;
     text-align: justify;
-}
-
-#escuela .section__galeria {
-    grid-area: galeria;
-}
-
+} */
 @media (max-width: 991px) {
 
     /* tuve que usar !important porque me lo pisaba el estilo anterior y no se porque */
@@ -256,6 +236,13 @@ nav ul .nav-link:hover {
         width: 100% !important;
     }
 }
+
+
+#escuela .section__galeria {
+    grid-area: galeria;
+}
+
+
 
 .galeria__contenedorImagenes {
     display: grid;
@@ -296,47 +283,7 @@ nav ul .nav-link:hover {
 }
 
 /* Eventos */
-#eventos h1 {
-    width: fit-content;
-    margin: auto;
-    padding: 50px;
-}
 
-#eventos .eventos__texto h2 {
-    width: fit-content;
-    margin: auto;
-    padding: 50px;
-    text-align: center;
-}
-
-#eventos .eventos__texto h3 {
-    display: inline;
-    padding: 0 12%;
-    margin-bottom: 10px;
-}
-
-#eventos article {
-    border: 3px solid black;
-    margin: 5px 0;
-}
-
-#eventos .eventos__imagen {
-    display: inline-block;
-}
-
-#eventos .eventos__imagen img {
-    width: 50vw;
-    height: 100vh;
-    vertical-align: top;
-}
-
-#eventos .eventos__texto {
-    display: inline-block;
-    width: 48vw;
-    vertical-align: top;
-    padding: 20px;
-    text-align: justify;
-}
 
 /* Contacto */
 
@@ -371,3 +318,5 @@ footer {
     background-color: #3D3D3E;
     color: #85FFBD;
 }
+
+
