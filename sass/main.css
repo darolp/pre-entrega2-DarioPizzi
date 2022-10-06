@@ -94,7 +94,7 @@ header nav ul .nav-link:hover {
   font-weight: 700;
 }
 #index .main__btn {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "Archivo Black", sans-serif;
   color: #85FFBD;
   border-radius: 25px;
@@ -109,8 +109,8 @@ header nav ul .nav-link:hover {
   }
 }
 #index .main .contenedor__texto {
-  -webkit-animation: aparicion-texto 1.5 both;
-          animation: aparicion-texto 1.5 both;
+  -webkit-animation: aparicion-texto 1.5s both;
+          animation: aparicion-texto 1.5s both;
 }
 @-webkit-keyframes aparicion-texto {
   0% {
@@ -140,8 +140,9 @@ header nav ul .nav-link:hover {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(80, 80, 80, 0.8);
   color: #85FFBD;
+  border-radius: 12px;
 }
 #index .carousel-item img {
   height: 100%;
@@ -249,6 +250,12 @@ header nav ul .nav-link:hover {
 /*Eventos*/
 #eventos {
   background-color: #151515;
+}
+#eventos .contenedor__imagen {
+  max-height: 600px;
+}
+#eventos .contenedor__imagen img {
+  height: 100%;
 }
 
 /*Contacto*/

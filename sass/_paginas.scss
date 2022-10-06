@@ -23,7 +23,7 @@
         }
 
         &__btn {
-            @include fuente-titulares(2rem);
+            @include fuente-titulares(1.8rem);
             border-radius: 25px;
             background-color: $colorSpan;
             color: white;
@@ -38,11 +38,11 @@
         }
 
         & .contenedor__texto {
-            animation: aparicion-texto 1.5 both;
+            animation: aparicion-texto 1.5s both;
 
             
         }
-        
+
         @keyframes aparicion-texto {
             0% {
                 filter: blur(12px);
@@ -63,8 +63,9 @@
             & h5,
             p {
                 width: fit-content;
-                background-color: rgba(0, 0, 0, 80%);
+                background-color: rgba(80, 80, 80, 80%);
                 color: $colorPrincipal;
+                border-radius: 12px;
             }
 
             & img {
@@ -195,6 +196,12 @@
 /*Eventos*/
 #eventos{
     background-color: $colorFondo;
+    & .contenedor__imagen{
+        max-height: 600px;
+        & img{
+            height: 100%;
+        }
+    }
 }
 
 /*Contacto*/
