@@ -3,6 +3,7 @@
 .footer {
     grid-area: footer;
     background-color: $colorFondo;
+    border-top: 1px solid $colorPrincipal;
 
     & .logo{
         @include logo

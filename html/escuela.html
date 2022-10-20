@@ -10,6 +10,7 @@
     <meta name="keywords" content="patines rollers patinar aprender escuela patin salto derrape urbano eventos">
     <meta name="description" content="conoce mas sobre nuestras clases, dias horarios, elegí la modalidad que mas te guste">
     <!-- Iconos -->
+    <link rel="icon" href="../imagenes/logoPatinUrbano.ico">
     <link rel="stylesheet" href="../estilos/iconos/css/all.min.css">
     <!-- fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -88,6 +89,7 @@
         <section class="galeria">
             <h2>Galeria</h2>
             <div class="galeria__contenedor">
+                <!-- lo hice con style en linea porque me parecio mas practico que generar una clase distinta por cada item de la galeria para poder darle el backgroun-image en css -->
                 <div class="galeria__item alta"style="background-image: url(../imagenes/galeria-1.jpg)"></div>
                 <div class="galeria__item" style="background-image: url('../imagenes/galeria-2.jpg');"></div>
                 <div class="galeria__item ancha" style="background-image: url(../imagenes/galeria-3.jpg);"></div>
@@ -107,7 +109,7 @@
         </section>
 
         <!-- footer -->
-        <footer class="footer">
+        <footer class="footer mt-5">
             <div class="container-fluid text-center pt-3">
                 <div class="row">
                     <div class="col-md-3 col-12 d-flex justify-content-center align-items-center">
@@ -135,9 +137,9 @@
                     <div class="col-md-4 py-4 col-12">
                         <h3 class="pb-3 text-center">Redes Sociales</h3>
                         <div class="footer__redes">
-                            <button><i class="fab fa-facebook-f"></i></button>
-                            <button><i class="fab fa-instagram"></i></button>
-                            <button><i class="fab fa-whatsapp"></i></button>
+                            <a target="_blank" href="https://www.facebook.com/patin.urbanocampanabsasargentina"><button><i class="fab fa-facebook-f"></i></button></a>
+                            <a target="_blank" href="https://www.instagram.com/patinurbanocampana/"><button><i class="fab fa-instagram"></i></i></button></a>
+                            <a target="_blank" href="http://wa.me/543489635302"><button><i class="fab fa-whatsapp"></i></button></a>
                         </div>
                     </div>
                 </div>

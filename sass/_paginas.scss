@@ -39,7 +39,6 @@
 
         & .contenedor__texto {
             animation: aparicion-texto 1.5s both;
-
             
         }
 
@@ -54,6 +53,15 @@
                 opacity: 1;
             }
         }
+    }
+
+    & .disciplina{
+        width: fit-content;
+        margin: auto;
+        padding: 5px;
+        background-color: $colorFondoSecundario;
+        border: solid 1px $colorPrincipal;
+        border-radius: 15px;
     }
 
     & .carousel {
@@ -72,6 +80,13 @@
                 height: 100%;
                 width: auto;
                 object-fit: cover;
+            }
+        }
+        &-caption{
+            &-derrape{
+                @media(max-width: 1024px){
+                    bottom: 66%;
+                }
             }
         }
     }

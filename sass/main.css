@@ -132,6 +132,16 @@ header nav ul .nav-link:hover {
     opacity: 1;
   }
 }
+#index .disciplina {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 5px;
+  background-color: #3D3D3D;
+  border: solid 1px #85FFBD;
+  border-radius: 15px;
+}
 #index .carousel-item {
   height: 100vh;
 }
@@ -149,6 +159,11 @@ header nav ul .nav-link:hover {
   width: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 1024px) {
+  #index .carousel-caption-derrape {
+    bottom: 66%;
+  }
 }
 
 /*Nosotros*/
@@ -274,6 +289,7 @@ header nav ul .nav-link:hover {
 .footer {
   grid-area: footer;
   background-color: #151515;
+  border-top: 1px solid #85FFBD;
 }
 .footer .logo {
   height: 83px;
