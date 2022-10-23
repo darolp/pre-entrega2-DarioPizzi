@@ -160,10 +160,8 @@ header nav ul .nav-link:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media (max-width: 1024px) {
-  #index .carousel-caption-derrape {
-    bottom: 66%;
-  }
+#index .carousel-caption-derrape {
+  bottom: 64%;
 }
 
 /*Nosotros*/
